@@ -7,6 +7,7 @@
   --color-focus: #6D64F7;
   --base-duration: 600ms;
   --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
+  --primary-font: "Fira Sans", sans-serif;
 }
 
 *, *:before, *:after {
@@ -37,7 +38,7 @@ html {
 
 
 body {
-    font-family: "Century Gothic", "Lato", sans-serif;
+    font-family: var(--primary-font);
   }
   
   a {
@@ -55,17 +56,16 @@ body {
     background: #eee;
     text-align: center;
     padding: 0 2em;
+
   }
   .et-hero-tabs h1,
   .et-slide h1 {
     font-size: 2rem;
     margin: 0;
-    letter-spacing: 1rem;
   }
   .et-hero-tabs h3,
   .et-slide h3 {
     font-size: 1rem;
-    letter-spacing: 0.01rem;
     opacity: 0.6;
   }
   
@@ -117,16 +117,13 @@ body {
     }
     .et-hero-tabs h3,
   .et-slide h3 {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   
     .et-hero-tab {
       font-size: 1rem;
     }
   }
-
-
-
  /** Icons **/
 
  ul {
@@ -199,7 +196,7 @@ body {
   
   ul li:nth-child(4) a:before {
     background: #000;
-  } 
+  }
 /* Cards */ 
 .card {
   position: relative;
